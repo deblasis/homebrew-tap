@@ -1,15 +1,15 @@
 class Zioscp < Formula
   desc "Drop-in scp replacement in Zig: resumable, parallel, pipelined SFTP transfers"
   homepage "https://deblasis.github.io/zioscp-web/"
-  version "0.7.2"
+  version "0.7.3"
   # Prebuilt macOS binary (ssh backend; uses the system ssh that macOS ships).
   on_arm do
-    url "https://github.com/deblasis/zioscp/releases/download/v0.7.2/zioscp-v0.7.2-aarch64-macos.tar.gz"
-    sha256 "dc91bb6f3869dc09fe410e0c6a01d16ee775d3f193dbad714d74102f1c4a2cd4"
+    url "https://github.com/deblasis/zioscp/releases/download/v0.7.3/zioscp-v0.7.3-aarch64-macos.tar.gz"
+    sha256 "67333dff7e193870ac3446346d8c198ba6fd5f27f23fa10f8d50fe49c84dbdd9"
   end
   on_intel do
-    url "https://github.com/deblasis/zioscp/releases/download/v0.7.2/zioscp-v0.7.2-x86_64-macos.tar.gz"
-    sha256 "433345141570bc652d2929f6aa9ea65d087cba7f35c684ddc0205ff785316378"
+    url "https://github.com/deblasis/zioscp/releases/download/v0.7.3/zioscp-v0.7.3-x86_64-macos.tar.gz"
+    sha256 "abfdec84778950df5da605c7a92faf96a4e503a5e0c63317ccbc1e96b4fbd9ef"
   end
 
   def install
