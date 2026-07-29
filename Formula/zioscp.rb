@@ -5,15 +5,15 @@ class Zioscp < Formula
   # Prebuilt macOS binary (ssh backend; uses the system ssh that macOS ships).
   on_arm do
     url "https://github.com/deblasis/zioscp/releases/download/v0.6.0/zioscp-v0.6.0-aarch64-macos.tar.gz"
-    sha256 "a5f9ad715fddfcb57e9633f0074a9b10a9859f92f2ee076e95a26adf52de35b7"
+    sha256 "7d1ca2011efff6482667f6d966292f0c110c1c04d43978505e7d76c5ca76de6e"
   end
   on_intel do
     url "https://github.com/deblasis/zioscp/releases/download/v0.6.0/zioscp-v0.6.0-x86_64-macos.tar.gz"
-    sha256 "329f13d545a3546dbd95102edf5e7f86a00f78e459b1074b4efbe610b89df6d9"
+    sha256 "13812c80159d5a6df7d3618e414fcb0d91665387110875e60420c7451f560830"
   end
 
   def install
-    bin.install Dir["zioscp-*/zioscp"].first => "zioscp"
+    bin.install "zioscp"
   end
 
   test do
